@@ -1,0 +1,363 @@
+\documentclass{article}
+
+\usepackage[UTF8]{ctex}
+
+%set no indentation
+\setlength\parindent{0pt}
+
+% print code in style
+\usepackage{listings}
+
+% set font to helvetica, do not know if it works 
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+
+
+%set the listing font
+\usepackage{courier}
+\lstset{basicstyle=\ttfamily,
+		backgroundcolor=\color[RGB]{253, 246, 227},
+		breaklines=true,
+        keywordstyle=\color[RGB]{133, 153, 0},
+        stringstyle=\color[RGB]{88,110,117},
+        commentstyle=\color[RGB]{147,161,161}}
+% \lstset{frame=single}
+\lstset{tabsize=4}
+
+\usepackage{sectsty}
+\sectionfont{\color[RGB]{236, 136, 29}}
+\subsectionfont{\color[RGB]{236, 136, 29}}
+
+% \usepackage{fontspec}
+% \newfontfamily\Consolas{Consolas}
+% \lstset{basicstyle=\Consolas}
+
+% better package to make lists
+\usepackage{enumitem}
+\setlist{nosep} % or \setlist{noitemsep} to leave space around whole list
+
+% image support
+% \usepackage{graphicx}
+% \graphicspath{ {image/} }
+
+
+\begin{document}
+
+	\begin{titlepage}
+   		\vspace*{\stretch{1.0}}
+   		\begin{center}
+      		\LARGE\textbf{《SQL基础教程》}\\
+      		\LARGE\textbf{学前指南}
+   		\end{center}
+  	 	\vspace*{\stretch{2.0}}
+	\end{titlepage}
+
+	\section*{指南}
+		本指南教你创建和《SQL基础教程》（之后略为《教程》）配套的数据库练习环境。
+		开始阅读之前确保你装了teradata程序组，而且得到了源代码\textbf{indb.sql}。
+
+		源代码文件\textbf{indb.sql}整理了《教程》附录2提供的4份源代码并把他们合并为一个。此代码与《教程》的代码在本质上是一样的。
+
+	% \section*{前言}
+
+	% 	\subsection*{这本书是什么} % (fold)
+	% 	\label{sub:whatsthisbook}
+
+	% 		本书将告诉你如何安装调试一个虚拟的Teradata SQL练习环境，
+	% 		在你的阅读过程中会手把手教你如何操作。
+	% 		其后你所创建的虚拟数据库将与《SQL基础教程》（之后略为《教程》）所使用的数据库契合，你就能完成所有其中所有的指令与习题。
+	% 		本书旨在帮助正在学习《教程》的人省去一些调试过程中的障碍，
+	% 		进而可以愉悦地研读《教程》中与SQL相关知识。
+
+	% 		希望此书可以帮助到你，祝你阅读愉快。
+
+			
+
+	% 	\subsection*{这本书适合谁} % (fold)
+	% 	\label{sub:whoshallusethisbook}
+
+	% 		本书适合正在学习《教程》且手头并没有配套练习用数据库的Teradata学员。
+
+	% 	\subsection*{预装要求} % (fold)
+	% 	\label{sub:prerequirements}
+			
+	% 		要使用本书，你必须拥有以下环境：
+
+	% 		\begin{enumerate}[label=\textbullet]
+	% 			\item Windows操作系统
+	% 			\item “集中学习程序组”：
+	% 				\begin{enumerate}
+	% 					\item Teradata Utility Pack
+	% 					\item Load Unload
+	% 					\item VMware workstation
+	% 					\item 虚拟机镜像文件包
+	% 				\end{enumerate}
+	% 			\item 源代码：\textbf{create\_database.sql}
+	% 		\end{enumerate}
+
+	% 		如果还没有安装好这些环境，向你的同事求助。
+
+
+	% 		源代码在附录里也有给出。这份文件很重要，他之后会帮你创建数据库并录入数据。
+	% 		这在之后会详细讲到，现在你只需要得到这个文件就好了。
+
+
+	% 	\subsection*{如何使用本书} % (fold)
+	% 	\label{sub:howtousethisbook}
+			
+	% 		要使用本书你必须按照顺序，将每个章节的每一步都做一遍，确保你没有漏掉任何一项。这样可以保证你创建的数据库的完整性。
+
+ 		
+ % 		\subsection*{流程结构} % (fold)
+
+ % 			你将会按照流程进行如下的操作：
+
+ % 			\begin{enumerate}
+ % 				\item 启动本地虚拟服务器
+ % 				\item 创建与录入数据库
+ % 				\item 开始练习
+ % 			\end{enumerate}
+
+ % 			前往下一章节开始准备你的数据库！
+
+
+ 		
+ % 		% subsection  (end)
+
+	% \section{启动本地虚拟服务器}
+
+		% 在第一步里你将在本地利用VMWare和虚拟机镜像文件启动一个虚拟的Teradata database服务器。
+		% 在以后的配置与练习过程中你将一直和本地的这个虚拟服务器对话。
+
+	\section{启动虚拟机} % (fold)
+		
+		% subsection 启动虚拟机 (end)
+		启动VMWare后选择打开你的虚拟机镜像，启动它。
+		在启动过程中如果有选项，选择linux,或者SUSE。
+
+		在随后出现的图形登入界面中，用户名和密码都是root。输入后登录。Teradata服务会在后台自动运行。
+
+	\section{获得虚拟机IP地址} % (fold)
+	
+		% subsection 获得虚拟机ip地址 (end)
+		
+		
+		启动完虚拟机后，打开桌面上的Gnome Terminal程序。
+
+		在Gnome Terminal 中输入如下指令并回车(注意你不用输入\#号）：
+
+		\begin{lstlisting} [gobble=12]
+			# ifconfig
+		\end{lstlisting}
+
+		在反馈信息中找到 \lstinline|inet addr:xxx.xxx.xxx.xxx|这一行，这是你用来访问虚拟服务器的虚拟IP，将他记下！ 
+
+		
+
+		服务器已经架设好了，要注意在练习过程中不能关闭此虚拟机。
+
+	% \section{创建与录入数据库} % (fold)
+
+	% 	在这一节你将创建数据库，并将数据录入这个数据库。
+	% 	这一系列动作都由源代码文件帮你完成。
+	% 	% 你所要做的只是将源代码提交到你的虚拟服务器中。
+	% 	% 注意这一节的所有操作都在你的Windows系统里完成，跟虚拟机无关。
+
+	% 	\paragraph{注意}
+	% 		你运行的镜像文件有可能已经包含了正确调试好的数据库，在这种情况下理论上你不用做什么并可以直接开始练习。但是为了知晓这个镜像中的数据库到底如何，还是需要一些操作来进行判断。这在之后会详细说明。现在请先按顺序阅读下一节。
+
+		% \subsection{这份源代码是什么} % (fold)
+		% 	本书整理了《教程》附录2提供的4份源代码并把他们合并为为一个源代码文件\textbf{create\_database.sql}。本书的源代码与《教程》的代码在本质上是一样的。
+
+		% 	简单来说，这份源代码会帮你完成这几件事：
+		% 	\begin{enumerate}
+		% 		\item 以\textbf{DBC}身份创建一个\textbf{Teradata\_Education}用户。这个新用户有创建子数据库的权限。
+		% 		\item 利用被\textbf{DBC}赋予的权限，以\textbf{Teradata\_Education}的身份帮你创建一个名为\textbf{Customer\_Service}的数据库。之后创建各种表格，录入数据。
+		% 		\item 以\textbf{Teradata\_Education}的身份帮你创建\textbf{STUDENT}用户，这个用户是你将来用来登录数据库进行练习的用户。
+		% 	\end{enumerate}
+
+		% 如果你想详细研读这份代码，请看附录
+
+
+	\section{登入数据库} % (fold)
+		% 在执行源代码前，先登录服务器。
+		你将使用BTEQ工具来完成之后的操作。
+
+		在终端中输入：
+
+		\begin{lstlisting} [gobble=12]
+			> bteq
+		\end{lstlisting}
+
+		如果一切顺利你将看到如下BTEQ的欢迎界面。
+		\begin{lstlisting} [gobble=12]
+			 Teradata BTEQ 13.10.00.03 for WIN32.
+				Copyright 1984-2010, Teradata Corporation. ALL RIGHTS RESERVED.
+				Enter your logon or BTEQ command:
+
+		\end{lstlisting}
+
+		接下来进行登录，登录命令需要你的刚才记录的IP地址，将此IP与以下指令中的\lstinline|[ServerIP]|字样替换并输入。注意，这次你必须输入开头的.号！
+
+		\begin{lstlisting} [language=sql,gobble=12]
+			.LOGON [ServerIP]/DBC
+		\end{lstlisting}
+
+		回车后在\lstinline|password|中输入\lstinline|DBC|。
+
+		你应该立刻看到如下欢迎界面，恭喜你已以用户身份\textbf{DBC}登入服务器。
+
+		\begin{lstlisting} [gobble=12]
+			*** Logon successfully completed.               
+			*** Teradata Database Release is 15.00.00.08    
+			*** Teradata Database Version is 15.00.00.07    
+			*** Transaction Semantics are BTET.             
+			*** Session Character Set Name is 'ASCII'.      
+			                                                
+			*** Total elapsed time was 1 second.            
+			                                                
+			BTEQ -- Enter your SQL request or BTEQ command: 
+		\end{lstlisting}
+
+	\section{检查数据库} % (fold)
+
+		这一步的意义是帮你了解已有的数据库，并判断是否可以跳过下一步。你手里拿到的虚拟机镜像有可能已经包含一个已经调试完毕的数据库，这样你就不用自己执行源代码来创建它了。
+
+		在你的BTEQ窗口中，输入如下命令来了解有哪些用户和数据库。
+
+		\begin{lstlisting} [language=sql,gobble=12]
+			 SELECT * FROM USERS; SELECT * FROM DATABASES;
+		\end{lstlisting}
+
+		如果你的结果中包括以下这几项，说明你的数据库是已经调试好的，可以跳过下一节。
+		\begin{lstlisting} [gobble=12]
+			...
+			UserName    CreatorName          Passwor
+			----------  ------------------   -------
+			...
+			STUDENT     TERADATA_EDUCATION   16
+			STUDENT00   TERADATA_EDUCATION   16
+			...
+			DatabaseName       CreatorName          OwnerName
+			----------------   ------------------   -------------
+			...
+			Customer_Service   TERADATA_EDUCATION   Teradata_Educ
+		\end{lstlisting}
+
+		如果你跳过下一节，需先在BTEQ中用如下指令登出\textbf{DBC}身份。
+
+		\begin{lstlisting} [language=sql,gobble=12]
+			.LOGOFF
+		\end{lstlisting}
+
+		
+		如果你不能跳过下一节，\textbf{不要登出}！直接前往下一节手动添加数据库。
+
+		
+		% subsection 检查数据库 (end)
+
+	\section{（可选）执行源代码} % (fold)
+		
+		\framebox[\textwidth]{如果在上一节中你发现数据库已调试完毕，跳过这一节。} \par
+
+		\bigskip
+	
+		% 把你存放\textbf{create\_database.sql}的路径记录下来，要包括\textbf{create\_database.sql}这串字符。这个路径之后用\lstinline| [YourFilePath] |表示。在之后的SQL命令中，你需要将你的路径替换进命令，然后提交.
+
+		% % \begin{lstlisting} [gobble=20]
+		% % 	C:\Users\choushishi\Desktop\internship\trainingsql\create_database.sql
+		% % \end{lstlisting}
+
+		% 接下来回到你的BTEQ程序，现在你应该还是在登录状态。否则重新用我教你的方法登录一遍。
+
+		在BTEQ中输入如下命令，把\lstinline|[YourFilePath]|换成你的文件路径：
+
+		\begin{lstlisting} [language=sql,gobble=12, breaklines=true]
+			.run file=[YourFilePath]
+		\end{lstlisting}
+
+		在执行这个文件的时候你会看到一堆输出，仔细检查其中有没有Warning或者Failure字样。如果都没有，恭喜，你已经准备好数据库了！如果满屏警告，你一定是哪里弄错了，从第一步重新开始。
+
+		\paragraph{补充}
+			在检查过程中忽略以下提示。它本质上不是一个报错警告。
+
+			\begin{lstlisting} [gobble=16, breaklines=true]
+				*** Warning: EOF on INPUT stream.
+			\end{lstlisting}
+
+
+	\section{开始练习} % (fold)
+		在完成上面所有的操作之后你终于可以练练手了。
+		 《教程》要求你使用练习用户登录数据库，在本指南中这个用户是\textbf{STUDENT}。\textbf{STUDENT}没有写入权限。
+
+		现在你的BTEQ窗口应该是登出状态，用如下命令以\textbf{STUDENT}身份登入,并在提示符中输入密码\lstinline|STUDENT|：
+
+		\begin{lstlisting} [language=sql,gobble=12, breaklines=true]
+			.LOGON [ServerIP]/STUDENT
+		\end{lstlisting}
+
+		登入成功后，你先要输入以下命令来设定默认数据库。
+
+		\begin{lstlisting} [language=sql,gobble=12, breaklines=true]
+			DATABASE Customer_Service;
+		\end{lstlisting}
+
+		你现在可以开始练习了，试着输入一个《教程》43页中的\lstinline|SELECT|例句：
+
+		\begin{lstlisting} [language=sql,gobble=12, breaklines=true]
+			SELECT first_name
+			       ,last_name
+			       ,manager_employee_number
+			FROM   employee
+			WHERE  job_code >= 430000 AND
+			       job_code <= 439999;
+		\end{lstlisting}
+
+		如果你成功看到以下回应，说明你已完成配置，开始学习SQL吧！
+
+		\begin{lstlisting} [gobble=12, breaklines=true]
+			first_name last_name manager_employee_number
+			---------- --------- -----------------------
+			Paulene    Hopkins   1005
+			John       Charles   1005
+			Domingus   Lombardo  1005
+			Arnando    Villegas  1005
+			Loretta    Ryan      801
+			Allen      Brown     1005
+		\end{lstlisting}
+
+			
+		\section*{附录：本书与《教程》的出入}
+
+			在《教程》中默认的登入练习用户名是\textbf{SQL}，而不是本指南中的\textbf{STUDENT}。
+			这对大部分例句和习题都没有影响。如果在《教程》中出现SQL这几个关键字，请注意按情况将其中的\textbf{SQL}字符替换为\textbf{STUDENT}字符。
+
+			这个出入的原因是Teradata数据库在处理SQL请求时认为SQL是一个关键字（\textit{keyword}），所以SQL不能用作用户名。在创建用户时，原《教程》附录2提供的命令会报错，所以本指南更改练习用户名为\textbf{STUDENT}。
+
+			\begin{lstlisting} [language=sql,gobble=16, breaklines=true]
+				CREATE USER SQL FROM Teradata_Education AS
+					PASSWORD = SQL PERM = 12000000
+					SPOOL = 500000 ACCOUNT = ('$M_P0623');
+
+				*** Failure 3707 Syntax error, expected something like a name or a Unicode
+				delimited identifier between the 'USER' keyword and the 'SQL' keyword.
+				               Statement# 1, Info =17
+				*** Total elapsed time was 1 second.
+			\end{lstlisting}
+
+			另外，本指南只创建了一个\textbf{STUDENT}的子用户\textbf{STUDENT00}（《教程》创建了20个），因为只有你一个人在用这个数据库。如有需要，请自行登入有权限的\textbf{Teradata\_Education}用户创建更多子用户。
+
+		\section*{附录：使用Teradata Administrator}
+			Teradata Administrator是一个图形界面Teradata Databasae客户端，包含在软件安装组中。你也可以用它代替BTEQ来登入数据库并进行SQL操作。详细说明请参考《TD环境安装说明.doc》。
+
+			
+		% \section*{附录：create\_database.sql源代码}
+		% 	\lstinputlisting[language=sql,frame=none,breaklines=true,showstringspaces=false]{create_database.sql}
+
+
+		
+		% section  (end)
+\end{document}

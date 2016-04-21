@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1461146676 "C:\Users\choushishi\Desktop\internship\readme\readme.tex" "C:\Users\choushishi\Desktop\internship\readme/readme.pdf" "readme" 1461201209
-  "C:\Users\choushishi\Desktop\internship\readme/readme.aux" 1461146677 542 65d1bda3cc561f5b8353a0c40e9cef3c ""
-  "C:\Users\choushishi\Desktop\internship\readme\readme.tex" 1461146673 14529 ccdcd86b956c84c0698e2b6a99e80420 ""
-  "c:/Users/choushishi/Desktop/internship/readme/readme.tex" 1461146673 14529 ccdcd86b956c84c0698e2b6a99e80420 ""
+["pdflatex"] 1461204980 "C:\Users\choushishi\Desktop\internship\readme\readme.tex" "C:\Users\choushishi\Desktop\internship\readme/readme.pdf" "readme" 1461204982
+  "C:\Users\choushishi\Desktop\internship\readme/readme.aux" 1461204981 542 a5cf8ce8264935b21bc4f0e8d5e80f6d ""
+  "C:\Users\choushishi\Desktop\internship\readme\readme.tex" 1461204978 14782 60439ccfa7d0b43941c281e196754e25 ""
+  "c:/Users/choushishi/Desktop/internship/readme/readme.tex" 1461204978 14782 60439ccfa7d0b43941c281e196754e25 ""
   "c:/WINDOWS/fonts/simhei.ttf" 1446221433 9751720 3bf58f047d1440be4baad579495c0f9e ""
   "c:/WINDOWS/fonts/simsun.ttc" 1446189479 18209004 7a232081a03bd7f9c3d651e08face29c ""
   "c:/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1460989875 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -80,9 +80,7 @@
   "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong68.tfm" 1460992074 1172 e36ee82e53889b69220fe0f54fd031bb ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong6b.tfm" 1460992074 1172 eec47476c8168dac40c6b0d39a32faa4 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong6c.tfm" 1460992074 1172 da6dd37ba8d24cc1a36aa510c8ac56f9 ""
-  "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong6d.tfm" 1460992074 1172 3942109a9ca7a08ec5324d8eec4093d9 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong6e.tfm" 1460992075 1172 42ca517602ab12cb60a5174be463b80a ""
-  "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong72.tfm" 1460992074 1172 3988931ed4f7026bbecd81a5650d7854 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong73.tfm" 1460992075 1172 fd0cb8a34c74e2d27b9d6ceb95f2f96d ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong74.tfm" 1460992074 1172 9c784b2c832c4124ae2a4cc407dc47a5 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong75.tfm" 1460992075 1172 402d633b1aba150cdcd663d684057796 ""
@@ -195,10 +193,10 @@
   "c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1460992099 1889162 7f72bc45d47ef68a08b1eb71d91f7414 ""
   "c:/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1460992140 3856040 95d1d57da6b698de5a4c621f8280ac4d ""
   "c:/texlive/2015/texmf.cnf" 1460992087 497 7277663fd190ea5a4fe922b182dc7be2 ""
-  "readme.aux" 1461146677 542 65d1bda3cc561f5b8353a0c40e9cef3c ""
+  "readme.aux" 1461204981 542 a5cf8ce8264935b21bc4f0e8d5e80f6d ""
   (generated)
-  "C:\Users\choushishi\Desktop\internship\readme/readme.log"
   "readme.pdf"
   "readme.aux"
-  "readme.log"
   "C:\Users\choushishi\Desktop\internship\readme/readme.pdf"
+  "C:\Users\choushishi\Desktop\internship\readme/readme.log"
+  "readme.log"

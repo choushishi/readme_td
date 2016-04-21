@@ -57,9 +57,9 @@
 
 	\section*{指南}
 		本指南教你创建和《SQL基础教程》（之后略为《教程》）配套的数据库练习环境。
-		开始阅读之前确保你装了teradata程序组，而且得到了源代码\textbf{indb.sql}。
+		开始阅读之前确保你装了\textbf{teradata程序组}，而且得到了源代码\textbf{indb.sql}。
 
-		源代码文件\textbf{indb.sql}整理了《教程》附录2提供的4份源代码并把他们合并为一个。此代码与《教程》的代码在本质上是一样的。
+		源代码文件\textbf{indb.sql}整理了《教程》附录2提供的4份源代码并把他们合并为一个。此代码与《教程》的代码的功能是一样的。
 
 	% \section*{前言}
 
@@ -186,7 +186,7 @@
 		% 在执行源代码前，先登录服务器。
 		你将使用BTEQ工具来完成之后的操作。
 
-		在终端中输入：
+		在Windows命令行中输入：
 
 		\begin{lstlisting} [gobble=12]
 			> bteq
@@ -224,7 +224,7 @@
 
 	\section{检查数据库} % (fold)
 
-		这一步的意义是帮你了解已有的数据库，并判断是否可以跳过下一步。你手里拿到的虚拟机镜像有可能已经包含一个已经调试完毕的数据库，这样你就不用自己执行源代码来创建它了。
+		这一步的意义是帮你了解已有的数据库，并判断是否可以跳过下一步。你手里拿到的虚拟机镜像有可能已经包含一个已经调试完毕的数据库，这样你就不用自己执行源代码来配置它了。
 
 		在你的BTEQ窗口中，输入如下命令来了解有哪些用户和数据库。
 
@@ -235,26 +235,36 @@
 		如果你的结果中包括以下这几项，说明你的数据库是已经调试好的，可以跳过下一节。
 		\begin{lstlisting} [gobble=12]
 			...
-			UserName    CreatorName          Passwor
-			----------  ------------------   -------
+			UserName           CreatorName          Passwor
+			------------------ ------------------   -------
 			...
-			STUDENT     TERADATA_EDUCATION   16
-			STUDENT00   TERADATA_EDUCATION   16
+			Teradata_Education DBC      	        16
+			...        
+			STUDENT            TERADATA_EDUCATION   16
+			STUDENT00          TERADATA_EDUCATION   16
 			...
+
+
 			DatabaseName       CreatorName          OwnerName
 			----------------   ------------------   -------------
 			...
 			Customer_Service   TERADATA_EDUCATION   Teradata_Educ
+			CS_VIEWS           TERADATA_EDUCATION   Teradata_Educ
+			...
+			STUDENT            TERADATA_EDUCATION   Teradata_Educ
+			STUDENT00          TERADATA_EDUCATION   STUDENT
+
+
 		\end{lstlisting}
 
-		如果你跳过下一节，需先在BTEQ中用如下指令登出\textbf{DBC}身份。
+		% 如果你跳过下一节，需先在BTEQ中用如下指令登出\textbf{DBC}身份。
 
-		\begin{lstlisting} [language=sql,gobble=12]
-			.LOGOFF
-		\end{lstlisting}
+		% \begin{lstlisting} [language=sql,gobble=12]
+		% 	.LOGOFF
+		% \end{lstlisting}
 
 		
-		如果你不能跳过下一节，\textbf{不要登出}！直接前往下一节手动添加数据库。
+		如果你没有这几项结果，\textbf{不要登出}！直接前往下一节手动配置数据库。
 
 		
 		% subsection 检查数据库 (end)
@@ -293,7 +303,7 @@
 		在完成上面所有的操作之后你终于可以练练手了。
 		 《教程》要求你使用练习用户登录数据库，在本指南中这个用户是\textbf{STUDENT}。\textbf{STUDENT}没有写入权限。
 
-		现在你的BTEQ窗口应该是登出状态，用如下命令以\textbf{STUDENT}身份登入,并在提示符中输入密码\lstinline|STUDENT|：
+		用如下命令以\textbf{STUDENT}身份登入,并在提示符中输入密码\lstinline|STUDENT|：
 
 		\begin{lstlisting} [language=sql,gobble=12, breaklines=true]
 			.LOGON [ServerIP]/STUDENT
@@ -330,7 +340,7 @@
 		\end{lstlisting}
 
 			
-		\section*{附录：本书与《教程》的出入}
+		\section*{附录：本指南与《教程》的出入}
 
 			在《教程》中默认的登入练习用户名是\textbf{SQL}，而不是本指南中的\textbf{STUDENT}。
 			这对大部分例句和习题都没有影响。如果在《教程》中出现SQL这几个关键字，请注意按情况将其中的\textbf{SQL}字符替换为\textbf{STUDENT}字符。

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.4.18)  20 APR 2016 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.4.18)  21 APR 2016 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1053,17 +1053,17 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.53937> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.01236pt on input line 60.
 
-Overfull \hbox (7.31215pt too wide) in paragraph at lines 59--61
+Overfull \hbox (9.62512pt too wide) in paragraph at lines 59--61
 \C70/rm/m/n/10.53937/73 Ø \C70/rm/m/n/10.53937/58 É|\C70/rm/m/n/10.53937/30 ^^B
 | \C70/rm/m/n/10.53937/5f ^^@ \C70/rm/m/n/10.53937/59 À \C70/rm/m/n/10.53937/96
  ^^E \C70/rm/m/n/10.53937/8b ˚ \C70/rm/m/n/10.53937/4e K \C70/rm/m/n/10.53937/5
 2 M \C70/rm/m/n/10.53937/78 n \C70/rm/m/n/10.53937/4f › ` \C70/rm/m/n/10.53937/
-88 ≈ \C70/rm/m/n/10.53937/4e Ü\T1/phv/m/n/10.53937 teradata\C70/rm/m/n/10.53937
-/7a  \C70/rm/m/n/10.53937/5e è \C70/rm/m/n/10.53937/7e ƒ|\C70/rm/m/n/10.53937/
-ff ^^L| \C70/rm/m/n/10.53937/80 ^^L \C70/rm/m/n/10.53937/4e ^^T \C70/rm/m/n/10.
-53937/5f ó \C70/rm/m/n/10.53937/52 0 \C70/rm/m/n/10.53937/4e Ü \C70/rm/m/n/10.5
-3937/6e ê \C70/rm/m/n/10.53937/4e „ \C70/rm/m/n/10.53937/78 ^^A\T1/phv/b/n/10.5
-3937 indb.sql|\C70/rm/m/n/10.53937/30 ^^B|
+88 ≈ \C70/rm/m/n/10.53937/4e Ü\T1/phv/b/n/10.53937 teradata\C70/rm/bx/n/10.5393
+7/7a  \C70/rm/bx/n/10.53937/5e è \C70/rm/bx/n/10.53937/7e ƒ|\C70/rm/m/n/10.539
+37/ff ^^L| \C70/rm/m/n/10.53937/80 ^^L \C70/rm/m/n/10.53937/4e ^^T \C70/rm/m/n/
+10.53937/5f ó \C70/rm/m/n/10.53937/52 0 \C70/rm/m/n/10.53937/4e Ü \C70/rm/m/n/1
+0.53937/6e ê \C70/rm/m/n/10.53937/4e „ \C70/rm/m/n/10.53937/78 ^^A\T1/phv/b/n/1
+0.53937 indb.sql|\C70/rm/m/n/10.53937/30 ^^B|
  []
 
 
@@ -1093,52 +1093,52 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) [2]
 Package CJKpunct Info: use punctuation spaces for family 'zhhei' with punctstyl
-e (quanjiao) on input line 262.
+e (quanjiao) on input line 272.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.01236pt on input line 285.
+(Font)              scaled to size 10.01236pt on input line 295.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.01236pt on input line 285.
+(Font)              scaled to size 10.01236pt on input line 295.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.53937> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 285.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 295.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.01236pt on input line 285.
+(Font)              scaled to size 10.01236pt on input line 295.
 [3]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.53937> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 338.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 348.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 10.01236pt on input line 338.
+(Font)              scaled to size 10.01236pt on input line 348.
 [4] [5] (C:\Users\choushishi\Desktop\internship\readme/readme.aux) ) 
 Here is how much of TeX's memory you used:
- 15933 strings out of 493027
- 281665 string characters out of 6137684
- 345817 words of memory out of 5000000
- 19076 multiletter control sequences out of 15000+600000
- 51649 words of font info for 137 fonts, out of 8000000 for 9000
+ 15924 strings out of 493027
+ 281603 string characters out of 6137684
+ 344848 words of memory out of 5000000
+ 19068 multiletter control sequences out of 15000+600000
+ 51919 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,45p,10458b,1637s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,45p,10458b,1592s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/WINDOWS
 /fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf>{c:/texlive/2015/texmf-dist/font
 s/enc/dvips/base/8r.enc}<c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.t
-tc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/
-simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOW
-S/fonts/simsun.ttc><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c
-:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsu
-n.ttc><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fon
-ts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simhei.ttf><c:/WIN
-DOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc
-><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/si
-mhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/
+tc><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/
+simsun.ttc><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOW
+S/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c
+:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsu
+n.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fon
+ts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WIN
+DOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simhei.ttf
+><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/si
+msun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/
 fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/
-WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.
-ttc><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts
+WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.
+ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts
 /simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDO
 WS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><
-c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/sims
-un.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fo
-nts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WI
-NDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.tt
+c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simh
+ei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fo
+nts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WI
+NDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.tt
 c><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/s
-imsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS
+imhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS
 /fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:
 /WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun
 .ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/font
@@ -1147,19 +1147,19 @@ OWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc>
 <c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/sim
 sun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/f
 onts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/W
-INDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.t
-tc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/
+INDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simhei.t
+tf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/
 simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOW
 S/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c
-:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/texlive/2015/texmf-
-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1
-/urw/helvetic/uhvb8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/u
-hvr8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+:/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2015/t
+exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2015/texmf-dist/fonts
+/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/helv
+etic/uhvro8a.pfb>
 Output written on C:\Users\choushishi\Desktop\internship\readme/readme.pdf (6 p
-ages, 418626 bytes).
+ages, 409664 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 306 compressed objects within 4 object streams
+ 468 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 257 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

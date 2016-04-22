@@ -57,7 +57,7 @@
 
 	\section*{指南}
 		本指南教你创建和《SQL基础教程》（之后略为《教程》）配套的数据库练习环境。
-		开始阅读之前确保你装了\textbf{teradata程序组}，而且得到了源代码\textbf{indb.sql}。
+		开始阅读之前确保你装了\textbf{teradata程序组}，而且得到了与之配套的虚拟机镜像和源代码\textbf{indb.sql}。
 
 		源代码文件\textbf{indb.sql}整理了《教程》附录2提供的4份源代码并把他们合并为一个。此代码与《教程》的代码的功能是一样的。
 
@@ -138,7 +138,9 @@
 		启动VMWare后选择打开你的虚拟机镜像，启动它。
 		在启动过程中如果有选项，选择linux,或者SUSE。
 
-		在随后出现的图形登入界面中，用户名和密码都是root。输入后登录。Teradata服务会在后台自动运行。
+		在随后出现的图形登入界面中，用户名和密码都是root。输入后登录。
+
+		Teradata服务会在后台自动运行。
 
 	\section{获得虚拟机IP地址} % (fold)
 	
@@ -283,7 +285,7 @@
 
 		% 接下来回到你的BTEQ程序，现在你应该还是在登录状态。否则重新用我教你的方法登录一遍。
 
-		在BTEQ中输入如下命令，把\lstinline|[YourFilePath]|换成你的文件路径：
+		在BTEQ输入如下命令，把\lstinline|[YourFilePath]|换成存放\lstinline|indb.sql|的路径：
 
 		\begin{lstlisting} [language=sql,gobble=12, breaklines=true]
 			.run file=[YourFilePath]
@@ -338,6 +340,10 @@
 			Loretta    Ryan      801
 			Allen      Brown     1005
 		\end{lstlisting}
+
+	\section{重置数据库}
+
+		如果你想要重置，再以\textbf{DBC}身份运行一遍\lstinline{indb.sql}。
 
 			
 		\section*{附录：本指南与《教程》的出入}
